@@ -24,15 +24,17 @@
 
 //Check Your Understanding
  //True: You can rewrite any for loop as a while loop.
-//  let n = 50;
-// let answer = 2;
 
-// while (n > 0) {
-//    answer = answer + n;
-//    n = n + 8;
-// }
+ let n = 10;
+let answer = 2;
 
-// console.log(answer);
+while (n > 0) {
+   answer = answer + n;
+   n = n + 8;
+}
+
+console.log(answer);
+
 // //The following code contains an infinite loop. Which is the best explanation for why the loop does not terminate?
 //In the while loop body, we must set n to false, and this code does not do that.
 

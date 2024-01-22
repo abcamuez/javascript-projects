@@ -16,8 +16,6 @@ let shuttleAltitude = 0;
 
 //b. Use a second loop to query the user for the number of astronauts (up to a maximum of 7). Validate the entry.
 
-const input = require('readline-sync');
-
 while (astronautsAboard <= 1 || astronautsAboard > 7 || isNaN(astronautsAboard)) {
     astronautsAboard = input.question('Enter number of Astronauts: ');
 
@@ -25,8 +23,20 @@ while (astronautsAboard <= 1 || astronautsAboard > 7 || isNaN(astronautsAboard))
   
 //c. Use a final loop to monitor the fuel status and the altitude of the shuttle. Each iteration, decrease the fuel level by 100 units for each astronaut aboard. Also, increase the altitude by 50 kilometers.
 
+while (fuelLevel-100*astronautsAboard >= 0) {
+  fuelLevel-- && shuttleAltitude++;
+  fuelLevel = fuelLevel - 100*astronautsAboard
+  shuttleAltitude = shuttleAltitude + 50
+  console.log(fuelLevel);
+  console.log(shuttleAltitude)
+}
+/*Exercise #5: Output the result with the phrase, “The shuttle gained an altitude of ___ km.”*/
 
+console.log('The shuttle gained an altitude of ' + shuttleAltitude + ' km.');
 
-/*Exercise #5: Output the result with the phrase, “The shuttle gained an altitude of ___ km.”
+//If the altitude is 2000 km or higher, add “Orbit achieved!” Otherwise add, “Failed to reach orbit.”*/
 
-If the altitude is 2000 km or higher, add “Orbit achieved!” Otherwise add, “Failed to reach orbit.”*/
+if (shuttleAltitude >= 2000) {
+  console.log('Orbit achieved!');
+} else 
+  console.log('Failed to reach orbit.');

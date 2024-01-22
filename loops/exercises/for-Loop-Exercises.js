@@ -6,28 +6,30 @@
 
 //     //A
 
-//     for (let f = 0; f < 21;f++) {
-//       console.log(f);
-//     }
+    for (let f = 0; f < 21;f++) {
+      console.log(f);
+    }
 
 // //B
-// for (let x = 3; x < 30; x+= 2) {
-//   console.log(x)
-// }
+
+for (let x = 3; x < 30; x+= 2) {
+  console.log(x)
+}
 
 // //C
-// // for (let y = 12; y >+ -15; y -= 2) {
-// //   console.log(y)
-// // }
+
+for (let y = 12; y >+ -15; y -= 2) {
+  console.log(y)
+}
 
 //D
 
-// for(let a = 50; a > 20; a--) {
-//   if (a % 3 == 0){
-//     console.log(a);
-//   }
+for(let a = 50; a > 20; a--) {
+  if (a % 3 == 0){
+    console.log(a);
+  }
    
-//   }
+  }
 
 /*Exercise #2: 
 Initialize two variables to hold the string “LaunchCode” and the array [1, 5, ‘LC101’, ‘blue’, 42].
