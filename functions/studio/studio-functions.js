@@ -3,6 +3,14 @@
 // Part One: Reverse Characters
 
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
+function reverseCharacters(strToReverse) {
+
+    let arr = ['hello', 'world', 123, 'orange'];
+
+arr.reverse()
+console.log(arr);
+}
+
 // 2. Within the function, split the string into an array, then reverse the array.
 // 3. Use join to create the reversed string and return that string from the function.
 // 4. Below the function, define and initialize a variable to hold a string.
