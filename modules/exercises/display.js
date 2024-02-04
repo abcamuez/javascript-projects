@@ -34,3 +34,8 @@ function printTestScores(index,test,students,scores){
   }
   return;
 }
+
+// const potato = require('./practiceExports.js');
+// console.log(potato.printAll)
+
+module.exports = printAll;
