@@ -9,3 +9,7 @@ function checkFive(num){
    }
    return result;
  }
+
+console.log(checkFive(5));
+
+ module.exports = checkFive;
