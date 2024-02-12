@@ -3,22 +3,53 @@ function gradeLabs(labs) {
     let lab = labs[i];
     let result = lab.runLab(3);
     console.log(`${lab.student} code worked: ${result === 27}`);
+  } try {
+    result = lab.runLab(3);
+  }
+  catch {
+    console.log("Error thrown")
   }
 }
 
-let studentLabs = [
+let studentLabs2 = [
   {
-    student: 'Carly',
-    runLab: function (num) {
+      student: 'Blake',
+      runLab: function (num) {
         return Math.pow(num, num);
-    }
+      }
   },
   {
-    student: 'Erica',
-    runLab: function (num) {
+      student: 'Jessica',
+      runLab: function (num) {
+        return Math.pow(num, num);
+      }
+  },
+  {
+      student: 'Mya',
+      runLab: function (num) {
         return num * num;
-    }
+      }
   }
 ];
 
-gradeLabs(studentLabs);
+gradeLabs(studentLabs2);
+
+
+// let studentLabs = [
+//   {
+//     student: 'Carly',
+//     runLab: function (num) {
+//         return Math.pow(num, num);
+//     }
+//   },
+//   {
+//     student: 'Erica',
+//     runLab: function (num) {
+//         return num * num;
+//     }
+//   }
+// ];
+
+// gradeLabs(studentLabs);
+
+
