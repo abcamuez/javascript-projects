@@ -29,7 +29,10 @@ class Car {
   }
 }
 
-let myCar = new Car('Tesla', 'Model S', 2019);
-console.log(myCar);
+let myCar = new Car('Chevy', 'Astro', 1985, 'gray', 20);
+console.log(typeof myCar.year);
+
+// let myCar = new Car('Tesla', 'Model S', 2019);
+// console.log(myCar);
 //If we call the class with let myCar = new Car('Tesla', 'Model S', 2019), what is output by console.log(myCar)
 //Car {make: ‘Tesla’, model: ‘Model S’, year: 2019, color: undefined, mpg: undefined }
