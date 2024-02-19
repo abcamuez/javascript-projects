@@ -1,0 +1,8 @@
+//what line in a CLI indicates that the terminal is ready to accept commands
+answer: prompt
+.. takes you to a parent directory
+
+//vim mode will insert test, escape key + :w will save file. :q! will exit file without saving. 
+//HyperText Markup Language
+//DOCTYPE does not require a closing tag
+//em is used for italic
